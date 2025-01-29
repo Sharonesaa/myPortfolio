@@ -1,6 +1,7 @@
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto Serif", serif;
   color: #ffffff;
   background-image: url('/public/images/Fondo.jpg');
   background-size: cover; 

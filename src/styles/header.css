@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* Separa los tres bloques */
+  align-items: center; /* Centra verticalmente */
+  padding: 5px 20px;
+  background-color: #fffcfc;
+  color: rgb(160, 142, 61);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Separa las tres partes del header */
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Ajusta según tu preferencia */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color:rgb(160, 142, 61);
+  font-size: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around; /* Espaciado entre los iconos */
+  width: 120px; /* Ajusta según sea necesario */
+}
+
+.social-icons i {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: #007bff; /* Cambia el color cuando el mouse pasa sobre el icono */
+}
