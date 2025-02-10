@@ -6,8 +6,9 @@ function Header() {
     <header className="header">
       <div className="container">
         {/* Logo */}
-        <h1 className="logo">Mi Portafolio</h1>
-        
+        <div className="logo">
+          <img src="/images/logo.png" alt="" />
+        </div>
         {/* Enlaces de navegación */}
         <nav>
           <ul className="nav-links">
@@ -19,9 +20,15 @@ function Header() {
         
         {/* Iconos de redes sociales */}
         <div className="social-icons">
-          <i className="fab fa-facebook"></i>
-          <i className="fab fa-twitter"></i>
-          <i className="fab fa-instagram"></i>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <img src="/images/linkedin.png" alt="Linkedin" className="icon" />
+          </a>
+          <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="/images/github.png" alt="GitHub" className="icon" />
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="/images/whatsapp.png" alt="WhatsApp" className="icon" />
+          </a>
         </div>
       </div>
     </header>

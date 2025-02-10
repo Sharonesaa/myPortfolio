@@ -3,7 +3,6 @@ body {
   margin: 0;
   font-family: "Roboto Serif", serif;
   color: #ffffff;
-  background-image: url('/public/images/Fondo.jpg');
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;

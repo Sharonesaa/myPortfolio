@@ -17,8 +17,7 @@
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 18px;
 }
 
 .nav-links {
@@ -39,16 +38,20 @@
 
 .social-icons {
   display: flex;
-  justify-content: space-around; /* Espaciado entre los iconos */
-  width: 120px; /* Ajusta según sea necesario */
+  gap: 15px; /* Espaciado entre iconos */
 }
 
-.social-icons i {
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
+.social-icons img {
+  width: 30px; /* Ajusta el tamaño de los iconos */
+  height: 30px;
+  transition: transform 0.3s ease;
 }
 
-.social-icons i:hover {
-  color: #007bff; /* Cambia el color cuando el mouse pasa sobre el icono */
+.social-icons img:hover {
+  transform: scale(1.2); /* Efecto de zoom al pasar el cursor */
+}
+.logo img {
+  width: 100px; /* Ajusta el tamaño según tu necesidad */
+  height: auto;
+  margin-left: 60%
 }
