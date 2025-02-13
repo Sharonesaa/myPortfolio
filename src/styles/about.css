@@ -13,8 +13,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 80%;
-  background: rgba(0, 0, 0, 0.6); /* Transparencia */
+  max-width: 60%;
+  background: rgba(0, 0, 0, 0.8); /* Transparencia */
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
@@ -29,17 +29,37 @@
   object-fit: cover;
   margin-right: 20px;
   border: 4px solid white;
+  margin-top: -15%
+}
+
+/* Botón de Descargar CV */
+.cv-button {
+  display: inline-block;
+  background-color: rgb(248, 225, 125);
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 25px;
+  transition: background 0.3s ease-in-out;
+  margin-right: 20px;
+}
+
+.cv-button:hover {
+  background-color: rgb(160, 142, 61);
 }
 
 /* Estilos para el texto */
 .about-text {
   color: white;
   max-width: 400px;
+  font-size: 20px;
 }
 
 /* Animación del texto */
 .animated-text {
-  font-size: 24px;
+  font-size: 26px;
   color: #fff;
   animation: fadeIn 2s ease-in-out;
 }

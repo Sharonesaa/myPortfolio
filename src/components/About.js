@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/about.css";
+import cv from "../assets/cv.pdf"
 
 function About() {
   return (
@@ -8,7 +9,12 @@ function About() {
         {/* Imagen a un lado */}
         <div className="about-image">
           <img src="/images/perfil.png" alt="Tu Foto" />
+            {/* Botón de descargar CV */}
+          <a href={cv} download="SharonLopez_CV.pdf" className="cv-button">
+            Descargar CV
+          </a>
         </div>
+        
 
         {/* Descripción al otro lado */}
         <div className="about-text">
@@ -17,6 +23,8 @@ function About() {
           Soy <strong>Sharon López</strong>, Full Stack Developer con experiencia en desarrollo web y Community Management. Me especializo en  tecnologías como JavaScript, TypeScript, NestJS, React, Next.js y Docker.
           Me destaco por mi capacidad de resolver problemas, escribir código limpio y estructurado, y trabajar en equipo para lograr objetivos con eficiencia.
           </p>
+         
+          
           <div className="tech-carousel">
           <div className="tech-track">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
