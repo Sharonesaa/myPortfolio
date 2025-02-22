@@ -1,16 +1,22 @@
 import React from "react";
+import "../styles/contact.css";
 
 function Contact() {
   return (
-    <section id="contact">
-      <h2>Contacto</h2>
-      <form>
-        <input type="text" placeholder="Tu nombre" required />
-        <input type="email" placeholder="Tu email" required />
-        <textarea placeholder="Tu mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
+      <footer className="footer">
+        <div className="footer-logo">
+          <img src="/images/SharonLopez.png" alt="Logo" />
+        </div>
+        <div className="footer-text">
+          <a href="https://github.com/sharonesaa" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/sharonesaa" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+          <a href="mailto:sharon@example.com">Correo</a>
+        </div>
+      </footer>
   );
 }
 

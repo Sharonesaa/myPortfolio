@@ -1,37 +1,10 @@
-
 body {
   margin: 0;
   font-family: "Roboto Serif", serif;
   color: #ffffff;
-  background-size: cover; 
+  background: linear-gradient(to bottom, #ffffff 70%, rgb(160, 142, 61) 100%);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background-color: #222;
-  color: white;
-}
-
-section {
-  padding: 60px 20px;
-}
-
-h1, h2, h3 {
-  color: #444;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  border: none;
-  color: white;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
+  min-height: 100vh;
 }

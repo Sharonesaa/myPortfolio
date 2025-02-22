@@ -6,10 +6,8 @@ function About() {
   return (
     <section id="about">
       <div className="about-container">
-        {/* Imagen a un lado */}
         <div className="about-image">
           <img src="/images/perfil.png" alt="Tu Foto" />
-            {/* Botón de descargar CV */}
           <a href={cv} download="SharonLopez_CV.pdf" className="cv-button">
             Descargar CV
           </a>
