@@ -19,7 +19,7 @@ function Projects() {
 
   return (
     <section id="projects">
-      <h2>Proyectos</h2>
+      <h2 className="projects-title">Proyectos</h2>
       <div className="projects-container">
         {projects.map((project, index) => (
           <div key={index} className="project-card">

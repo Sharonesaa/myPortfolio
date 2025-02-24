@@ -59,9 +59,9 @@
 
 /* Animación del texto */
 .animated-text {
-  font-size: 26px;
+  font-size: 28px;
   color: #fff;
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 4s ease-in-out;
 }
 
 /* Definición de animación */
