@@ -1,6 +1,6 @@
 .projects-title {
   font-size: 2.5rem; /* Tamaño inicial */
-  color:rgb(95, 85, 39); /* Marrón */
+  color:rgb(126, 112, 51); /* Marrón */
   text-align: center;
   opacity: 0;
   transform: scale(0.8); /* Inicia más pequeño */
@@ -19,17 +19,36 @@
   }
 }
 
+.projects-title:hover {
+  color: rgb(160, 142, 61); /* Color más dorado */
+}
+
+.projects-title::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background:rgb(200, 180, 80);
+  bottom: -5px;
+  left: 50%;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.projects-title:hover::after {
+  width: 100%;
+  left: 0;
+}
+
 
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Mantiene el layout */
+  gap: 20px;
+  margin-top: 20px;
+}
   .project-card {
     position: relative;
     width: 100%;
-    height: 300px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
@@ -41,8 +60,7 @@
   }
   .project-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto; /* Mantiene la proporción original */
     display: block;
   }
 
@@ -51,7 +69,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%; 
     background: rgba(0, 0, 0, 1);
     color: white;
     display: flex;
@@ -62,6 +80,24 @@
     padding: 20px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+  
+  .project-overlay h3 {
+    margin-bottom: 2px; /* Espacio entre el título y la descripción */
+    font-size: 1.5rem; /* Ajuste de tamaño */
+    color: rgb(160, 142, 61); /* Marrón dorado */
+  }
+  
+  .project-overlay p {
+    margin-bottom: 10px; /* Espacio antes del botón */
+    font-size: 1rem;
+    color: white;
+    padding: 30px;
+    margin-top: -2%;
+    width: 100%; /* Ocupa todo el ancho del overlay */
+    box-sizing: border-box; /* Asegura que el padding no altere el tamaño total */
   }
   
   .project-card:hover .project-overlay {

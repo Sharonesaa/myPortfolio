@@ -1,8 +1,7 @@
 body {
   margin: 0;
   font-family: "Roboto Serif", serif;
-  color: #ffffff;
-  background: linear-gradient(to bottom, #ffffff 70%, rgb(160, 142, 61) 100%);
+  background: linear-gradient(to bottom, #f8f4b7 70%, rgb(190, 167, 63) 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
