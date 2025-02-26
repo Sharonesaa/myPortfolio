@@ -7,13 +7,13 @@ function Projects() {
       name: "VotingSystem", 
       link: "https://proyecto-modulo5.vercel.app/", 
       image: "/images/votingsystem.png",
-      description: "La plataforma de gestión de campañas electorales permite a los usuarios organizar y administrar procesos electorales de manera eficiente. Los usuarios pueden registrarse, crear y gestionar campañas, postularse como candidatos, realizar votaciones e integrar autenticación con Google."
+      description: "Esta plataforma facilita la gestión integral de campañas electorales, permitiendo a los usuarios registrarse, postularse, crear y administrar campañas, y participar en votaciones con autenticación segura mediante Google. Mi contribución incluyó el diseño y desarrollo de funcionalidades clave, asegurando una experiencia eficiente y escalable. Utilizamos tecnologías como Next.js, React, Node.js, NestJS y PostgreSQL, combinadas con Tailwind CSS y SweetAlert2, para ofrecer una solución robusta y segura para la gestión de procesos electorales."
     },
     { 
       name: "FisioFulness", 
       link: "https://fisiomfulness.vercel.app/", 
       image: "/images/fisiofulness.png",
-      description: "FisioFulness es una plataforma diseñada para optimizar la gestión de citas médicas entre pacientes y profesionales de la salud. Ofrece una interfaz intuitiva que facilita a los usuarios agendar, gestionar y visualizar sus citas de manera rápida y eficiente. La plataforma está orientada a brindar una experiencia fluida tanto para pacientes como para profesionales, promoviendo una atención personalizada y oportuna."
+      description:"Plataforma diseñada para optimizar la gestión de citas médicas, permitiendo a pacientes y profesionales coordinar sus horarios de manera eficiente. Como parte del equipo de desarrollo, me enfoqué en la implementación del módulo de calendario, asegurando una sincronización fluida de las citas con funciones como asignación de horarios, reprogramación y notificaciones. Además, trabajé en la autenticación segura mediante el manejo de cookies y tokens (access y refresh tokens), mejorando la seguridad y experiencia del usuario al mantener sesiones activas de forma eficiente."
     },
   ];
 
