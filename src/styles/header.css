@@ -1,29 +1,33 @@
+/* Estilos generales */
 .header {
   display: flex;
-  justify-content: space-between; /* Separa los tres bloques */
-  align-items: center; /* Centra verticalmente */
-  padding: 5px 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   background-color: #fffcfc;
   color: rgb(160, 142, 61);
 }
 
 .container {
   display: flex;
-  justify-content: space-between; /* Separa las tres partes del header */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Ajusta según tu preferencia */
-  margin: 0 auto; /* Centra el contenedor */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.logo {
-  font-size: 18px;
+.logo img {
+  width: 80px; /* Ajusta el tamaño del logo */
+  height: auto;
 }
 
-.nav-links {
+/* Estilos del menú normal */
+.nav-links ul {
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .nav-links li {
@@ -32,14 +36,22 @@
 
 .nav-links a {
   text-decoration: none;
-  color:rgb(160, 142, 61);
+  color: rgb(160, 142, 61);
   font-size: 20px;
 }
 
 .nav-links a:hover {
-  color: rgb(200, 180, 80); /* Un dorado más claro */
+  color: rgb(200, 180, 80);
 }
 
+/* Oculta el botón del menú en pantallas grandes */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
 
 .social-icons {
   display: flex;
@@ -47,8 +59,8 @@
 }
 
 .social-icons img {
-  width: 30px; /* Ajusta el tamaño de los iconos */
-  height: 30px;
+  width: 40px; /* Ajusta el tamaño de los iconos */
+  height: 40px;
   transition: transform 0.3s ease;
 }
 
@@ -59,4 +71,57 @@
   width: 100px; /* Ajusta el tamaño según tu necesidad */
   height: auto;
   margin-left: 60%
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Mostrar el botón de menú */
+  .menu-toggle {
+    display: block;
+    color: rgb(160, 142, 61);
+    font-size: 28px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  /* Ocultar los enlaces por defecto */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Mostrar el menú cuando está abierto */
+  .nav-links.open {
+    display: block;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 15px; /* Espaciado entre iconos */
+  }
+
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+  }
 }

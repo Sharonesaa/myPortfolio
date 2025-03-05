@@ -85,16 +85,15 @@
 
   
   .project-overlay h3 {
-    margin-bottom: 2px; /* Espacio entre el título y la descripción */
+    margin-bottom: 10px; /* Espacio entre el título y la descripción */
     font-size: 1.5rem; /* Ajuste de tamaño */
     color: rgb(160, 142, 61); /* Marrón dorado */
   }
   
   .project-overlay p {
-    margin-bottom: 10px; /* Espacio antes del botón */
     font-size: 1rem;
     color: white;
-    padding: 30px;
+    padding: 10px;
     margin-top: -2%;
     width: 100%; /* Ocupa todo el ancho del overlay */
     box-sizing: border-box; /* Asegura que el padding no altere el tamaño total */
@@ -106,7 +105,6 @@
 
   .project-button {
     display: inline-block;
-    margin-top: 10px;
     padding: 10px 15px;
     background-color:  rgb(248, 225, 125);
     color: rgb(0, 0, 0);
@@ -119,4 +117,36 @@
   .project-button:hover {
     background-color:  rgb(248, 225, 125);
   }
+  
+  @media (max-width: 768px) {
+    .projects-container {
+      grid-template-columns: 1fr; /* Una sola columna en móviles */
+    }
+  
+    .project-overlay {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .project-overlay h3 {
+      font-size: 1.2rem; /* Reduce el tamaño del título */
+    }
+  
+    .project-overlay p {
+      font-size: 0.9rem; /* Reduce el tamaño del texto */
+      max-height: 80px; /* Limita la altura */
+      overflow-y: auto; /* Permite hacer scroll en la descripción si es muy larga */
+      text-overflow: ellipsis;
+      padding: 5px;
+    }
+  
+    .project-button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+      margin-top: auto; /* Empuja el botón hacia abajo */
+    }
+  }
+  
   
