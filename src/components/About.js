@@ -16,9 +16,9 @@ function About() {
         </div>
         {/* Descripción al otro lado */}
         <div className="about-text">
-          <h2 className="animated-text">Sobre Mí</h2>
+          <h2 className="animated-text">Sharon López</h2>
           <p>
-          Soy <strong>Sharon López</strong>,Full Stack Developer con experiencia en desarrollo web y Community Management. Me especializo en tecnologías como JavaScript, TypeScript, Node.js, NestJS, React, Next.js, Docker, y manejo de bases de datos SQL y NoSQL. Tengo experiencia tanto en pruebas manuales como automatizadas con herramientas como Jest y Jasmine. Me destaco por mi capacidad de resolver problemas, escribir código limpio y estructurado, y trabajar en equipo para lograr objetivos con eficiencia.
+         Full Stack Developer con experiencia en desarrollo web y Marketing Digital. Me destaco en escribir código limpio, eficiente y escalable, creando soluciones innovadoras que potencian proyectos digitales. Como Community Manager, he desarrollado estrategias para fortalecer la presencia online de marcas y negocios. Mi enfoque combina creatividad, análisis y tecnología para lograr resultados impactantes. 🚀
           </p>
         </div>       
       <div className="tech-carousel">

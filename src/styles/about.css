@@ -114,6 +114,14 @@
 
 /* Animación del carrusel */
 @keyframes scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); } /* Se mueve la mitad para hacer loop */
+  from { transform: translateX(0%); }
+  to { transform: translateX(-10%); } /* Se mueve la mitad para hacer loop */
+}
+
+/* Ejemplo aplicando el zoom solo a .about-container */
+@media (min-width: 1024px) {
+  .about-container {
+    transform: scale(0.9);
+    transform-origin: top left;
+  }
 }
