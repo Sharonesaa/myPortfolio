@@ -18,7 +18,7 @@ function About() {
         <div className="about-text">
           <h2 className="animated-text">Sharon López</h2>
           <p>
-         Full Stack Developer con experiencia en desarrollo web y Marketing Digital. Me destaco en escribir código limpio, eficiente y escalable, creando soluciones innovadoras que potencian proyectos digitales. Como Community Manager, he desarrollado estrategias para fortalecer la presencia online de marcas y negocios. Mi enfoque combina creatividad, análisis y tecnología para lograr resultados impactantes. 🚀
+         Full Stack Developer con experiencia en desarrollo web y marketing digital. Me destaco en escribir código limpio, eficiente y escalable, creando soluciones innovadoras que potencian proyectos digitales. Como Community Manager, he desarrollado estrategias para fortalecer la presencia online de marcas y negocios. Mi enfoque combina creatividad, análisis y tecnología para lograr resultados impactantes. 🚀
           </p>
         </div>       
       <div className="tech-carousel">
